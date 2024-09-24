@@ -8,7 +8,9 @@ nav {
     top: 0;
     left: 0;
     z-index: 99;
+
 }
+
 
 /* only show on medium and small screen */
 
@@ -36,7 +38,10 @@ nav {
 }
 
 .nav_links a{
+    padding: 1rem;
+    line-height: 3rem;
     transition: var(--transition);
+    color: var(--color-gray-100);
 }
 
 .nav_links a:hover{
@@ -115,7 +120,7 @@ nav {
     width: 100%;
     box-shadow: -2rem 2rem 5 rem rgba(0, 0 ,0 , 0.5);
     animation: navAnimation 600ms ease forwards;
-    transform: rotateX('90deg');
+    transform: rotateX(90deg);
     opacity: 0;
     transform-origin: top;
 }
@@ -143,7 +148,7 @@ nav {
 
 @keyframes navAnimation {
     to{
-        transform: rotateX('0');
+        transform: rotateX(0);
         opacity: 1;
     }
 }

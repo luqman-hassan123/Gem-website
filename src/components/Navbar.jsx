@@ -7,13 +7,12 @@ import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 
 const Navbar = () => {
-
   const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
     <nav>
       <div className="container nav_container">
-        <Link to="/" className="logo"> {/* Use Link here */}
+        <Link to="/" className="logo" onClick={() => setIsNavShowing(false)} > {/* Use Link here */}
           <img src={Logo} alt="nav logo" />
         </Link>
         
