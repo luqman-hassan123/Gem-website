@@ -94,7 +94,7 @@
 
 
 
-/* ==========================home css=================================== */
+/* ==========================values=================================== */
 
 
 .values__container{
@@ -134,4 +134,141 @@
     position: absolute;
     top: -1.5rem;
 }
+
+
+
+
+
+
+/* ==========================FAQs=================================== */
+
+.faqs__wrapper {
+    margin-top: 4rem;
+    margin-left: 9rem ;
+    margin-right: 9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+    padding-left: 5rem; /* Adjust the value as needed */
+    padding-right: 5rem; /* Adjust the value as needed */
+}
+
+.faq{
+    background: var(--color-gray-500);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.faqs_head{
+    justify-content: left;
+    margin-left: 9rem;
+
+}
+
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__icon{
+    background: transparent;
+    color: var(--color-gray-100);
+    font-size: 1.5rem;
+}
+
+.faq p{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+/* ==========================TESTIMONIALS=================================== */
+
+
+
+.testimonials{
+    width: 50rem;
+    margin-inline: auto;
+}
+
+.testimoanils__head{
+    justify-content: center;
+
+}
+
+.card.testimonial{
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+
+}
+
+.testimonial__avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    overflow: hidden;
+    position:absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 26, 0.4);
+    transition: var(--transition);
+}
+
+.testimonial:hover .testimonial__avatar{
+    border-radius: 50%;
+    border-color: var(--color-gray-400); 
+
+}
+
+.testimonial__quote{
+    font-style: italic;
+    margin: 1rem 0 2rem;
+
+}
+
+.card small .testimonial__title {
+    margin-top: 0.3rem;
+  
+}
+
+
+.testimonail__btn-container{
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1rem;
+}
+
+.testimonial_btn{
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+
+.testimonial_btn svg{
+    fill: var(--color-primary);
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+
+
+
+
 
